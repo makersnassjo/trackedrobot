@@ -7,22 +7,32 @@ void readSerial() {
   }
 
   if (command == 1) {
-    forward();
-   }
+    //forward();
+    SetSpeed (50, true);
+    SetFinalDrive ();
+  }
+  
   if (command == 5) {
     stop();
   }
 
   if (command == 4) {
-    right();
+    //right();
+    SetSteering (50, true);
+    SetFinalDrive ();
+
   }
 
   if (command == 3) {
-    left();
+    //left();
+    SetSteering (-50, true);
+    SetFinalDrive ();
   }
   
    if (command == 2) {
-    reverse();
+    //reverse();
+    SetSpeed (-50, true);
+    SetFinalDrive ();
   }
 
   
