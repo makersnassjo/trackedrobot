@@ -11,6 +11,11 @@ int ml_reverse = 11;
 int mr_forward = 9;
 int mr_reverse = 10;
 
+int driveSpeed = 0;
+int steering = 0;
+
+int finalDriveLeft = 0;
+int finalDriveRight = 0;
 
 
 void setup() {
